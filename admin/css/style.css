@@ -1,0 +1,308 @@
+body {
+  background-color: rgb(255, 255, 255) !important; /* cor de fundo do projeto */
+  padding-top: 100px; /* altura do card */
+  padding-bottom: 30px; /* distância do fim da página */
+}
+
+@media(min-width:992px) {
+  .leftmenutrigger {
+    margin: 7px 10px 4px 0; /* altura, posição do logo na nav */
+    cursor: pointer; /* Colocando a mãosinha ao passar por cima das 3 barrinhas */
+}
+
+/* NAVBAR */
+.navbar-nav.side-nav.abrir {
+  left:0; /* posição em que irá abrir a nav lateral */
+}
+
+#admin { /*cor da linha embaixo do menu */
+  box-shadow: 0 3px 5px yellow;
+}
+
+#func { /*cor da linha embaixo do menu */
+  box-shadow: 0 3px 5px rgb(14, 93, 197);
+}
+
+
+/* Lateral */
+.navbar-nav.side-nav {
+  background: #343a40; /* cor da navbar lateral */
+  position:fixed; /* fixado*/
+  top:56px; /* altura do menu lateral topo, abaixo do icone do menu*/
+  bottom:0; /* altura de baixo */
+  flex-direction: column!important; /* posição de coluna na navbar lateral*/
+  left:-220px; /* o tanto que irá para dentro da esquerda ... */
+  width:210px; /* largura ...*/
+}
+}
+
+.animacao { /* atraso para abrir o menu lateral */
+  transition:all .3s ease-in-out
+}
+
+.navbar-brand img {
+    width: 30px; /* largura do logo na navbar */
+    height: 30px; /* altura do logo na navbar */
+  }
+
+#dashboard .card {
+  background: rgb(255, 255, 255); /* cor dos cards */
+  border-radius: 10%;
+}
+
+label {
+  color: #343a40;
+}
+
+i {
+  color: #343a40; /* cor dos ícones do fontawesome */
+}
+
+#white { /* cor dos ícones da nav*/
+  color:rgb(255, 255, 255);
+}
+
+.card {
+    box-shadow: 0 3px 14px rgb(184, 184, 184); /* cor da linha que contorna o card, direita, desfoque */
+    margin-bottom: 10px; /* espaço entre o card de cima e o de baixo */
+    text-align:center; 
+    width: 100%;
+    margin-top: px; /* altura abaixo da navbar 20px deixa os card bonitinho*/ 
+}
+
+.card .card-title {
+    color: #343a40; !important;
+}
+
+
+.card img {
+    border-radius: 70%;/*deixar a imagem redonda */
+    border-bottom: 1px solid #343a40;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto; /* Alinhar ao meio */
+    padding: 10px;
+}
+
+#logo1 {
+  width: 70px;
+}
+
+/*///////////////////////////////////////////////////// Login /////////////////////////////////////////////////// */
+ 
+.form-signin h3{
+  color:rgb(255, 255, 255);
+}
+
+#lg {
+  color: white !important;
+}
+
+#lb {
+  color: white !important;
+}
+
+#red {
+  color:rgb(192, 51, 51);
+}
+
+.form-signin {
+  
+  padding: 10px 50px 10px;
+  margin: 0 auto;
+  margin-top: -4%;
+  background-color: #131313 !important;  
+  box-shadow: 0 100px 100px 350px #7e7e78 !important;
+  border-radius: 15px 50px;
+
+}
+
+.form-signin-heading {
+  text-align:center;
+}
+
+.sublinha {
+  height: 4px;
+  border-top: 0;
+  background-image: linear-gradient(rgb(249, 253, 0) 50%, rgb(14, 93, 197) 50%);
+  border-radius: 5px;
+}
+
+
+
+/* Inicio Form  /////////////////////////////////////////////////// */
+
+  #formulario {
+    padding: 10px;
+    width: 100%;
+    height: 50%;
+    /*box-shadow: 0 8px 8px rgb(24, 24, 22); */
+    margin: 0px auto; /* altura do formulario */
+    color: #ffffff;
+    border-radius: 15px;
+    
+  }
+
+  #sub {
+    padding: 80px;
+  }
+
+  #sub p{
+    color:white;
+  }
+
+  #sub p {
+    text-align: center;
+  }
+
+  #total {
+    margin-left: auto;
+  }
+
+  button {
+    margin-left: auto;
+  }
+
+  #tb { /* data table */
+    text-align: center;
+  }
+/*  INÍCIO CADASTRO */
+.parsley-required {
+  color: black;
+}
+
+.parsley-type {
+  color: black;
+}
+
+
+/* FIM CADASTRO */
+/* Fim Form  /////////////////////////////////////////////////// */
+
+  #listagem {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #lis {
+    text-decoration:none;
+    color: #343a40;
+  }
+
+h3 {
+  text-align: center;
+  color: #343a40 !important;
+}
+
+
+footer {
+  background: rgba(65, 65, 62, 0.178)
+}
+
+#sub textarea{
+    height:100%;
+    width: 100%;
+    padding-top: 10px;
+}
+
+  
+#k {
+  color:white;
+}
+
+td{
+  color:#343a40; /* cor da letra da listagem */
+}
+/* ----------------*/
+.accordion {
+  background-color: #343a40;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+#a1 {
+  background-color: #b3b3b3;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 0%;
+  width: 0%;
+  border-radius: 10%;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#texto {
+  text-align: center;
+}
+
+/* INÍCIO MESAS */
+.mesa-ocupada {
+  box-shadow: 0 3px 14px rgb(192, 51, 51); /* cor da linha que contorna o card, direita, desfoque */
+}
+
+.mesa-livre {
+  box-shadow: 0 3px 14px rgb(0, 255, 0);
+}
+
+#mesa {
+  text-align:center; 
+  padding: 10px;
+  width: 100%;
+  margin-top: 0; /* altura abaixo da navbar */
+  border-radius: 10%;
+}
+/* FIM MESAS */
+
+/* INÍCIO PEDIDO */
+
+#dados {
+  text-align: center;
+}
+
+/* SESSION CARRINHO */
+#total {
+  width:140px;
+  margin: 0 auto; 
+  text-align: center;
+  font-weight: 900;
+}
+
+#bot {
+  float: right;
+}
+
+/* FIM PEDIDO */
